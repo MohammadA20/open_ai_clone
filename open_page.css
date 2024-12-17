@@ -232,3 +232,42 @@ input[type="radio"] {
     height: 100%;
     object-fit: cover;
 }
+
+.chatgpt-container {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.chatgpt-container a {
+    display: inline-block;
+    padding: 15px 40px;
+    font-family: sans-serif;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+h5 {
+  color: gray;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-row2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
