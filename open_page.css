@@ -117,3 +117,118 @@ section.container {
 .slider-nav a:hover {
     opacity: 1;
 }
+
+/* Products */
+
+.products-container {
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 13);
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.arrows label {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+      pointer-events: all;
+      transition: background-color 0.3s;
+}
+
+.arrows label:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.arrows .prev {
+    margin-left: 10px;
+}
+
+.arrows .append {
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slider-1:checked ~ .slider {
+    transform: translateX(0);
+  }
+
+  #slider-2:checked ~ .slider {
+    transform: translateX(100%);
+  }
+
+  #slider-3:checked ~ .slider {
+    transform: translateX(200%);
+  }
+
+  #slider-4:checked ~ .slider {
+    transform: translateX(300%);
+  }
+
+  #slider-5:checked ~ .slider {
+    transform: translateX(400%);
+  }
+
+  #slider-6:checked ~ .slider {
+    transform: translateX(500%);
+  }
+
+  #slider-7:checked ~ .slider {
+    transform: translateX(600%);
+  }
+
+  #slider-8:checked ~ .slider {
+    transform: translateX(700%);
+  }
+
+  #slider-9:checked ~ .slider {
+    transform: translateX(800%);
+  }
+
+  #slider-10:checked ~ .slider {
+    transform: translateX(900%);
+  }
+
+  #slider-11:checked ~ .slider {
+    transform: translateX(1000%);
+  }
+
+  #slider-12:checked ~ .slider {
+    transform: translateX(1100%);
+  }
+
+  #slider-13:checked ~ .slider {
+    transform: translateX(1200%);
+  }
+
+.slider-products {
+    display: none;
+}
+
+.slides-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
